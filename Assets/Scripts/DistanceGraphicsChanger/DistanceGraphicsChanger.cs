@@ -15,7 +15,7 @@ public class DistanceGraphicsChanger : MonoBehaviour
     private void Start()
     {
         startDistance = Vector2.Distance(toFind.position, transform.position);
-        timer = intervalBetweenDistanceCheck;
+        sprites.InitiliazeMinMaxValues();
     }
 
     private void Update()
@@ -44,9 +44,9 @@ public class DistanceGraphicsChanger : MonoBehaviour
 
        var currentDistance = Vector2.Distance(toFind.position, transform.position);
        var percentageDistanceSinceStart = currentDistance / startDistance * 100;
+       
        foreach(var dSprite in sprites.Values)
        {
-            Debug.Log(percentageDistanceSinceStart);
             if (percentageDistanceSinceStart.IsInBetween(dSprite.minDistance,dSprite.maxDistance))
             {
                 if(dSprite.sprite != null)
