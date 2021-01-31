@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60327cb6d69a82148b48ef400a6c3e68, type: 3}
   m_Name: MySprites
   m_EditorClassIdentifier: 
-  Values: []
+  Values:
+  - sprite: {fileID: 21300000, guid: 24e075190b75dc8458771c00e196a791, type: 3}
+    minDistance: 80
+    maxDistance: 101
+  - sprite: {fileID: 21300000, guid: 16ba701672115a44981943142438a088, type: 3}
+    minDistance: 64
+    maxDistance: 80
+  - sprite: {fileID: 21300000, guid: 1a0fd1159f504394b9031aee7bc0a6af, type: 3}
+    minDistance: 48
+    maxDistance: 64
+  - sprite: {fileID: 21300000, guid: 630785e4eb379e84fb726b994db5311f, type: 3}
+    minDistance: 32
+    maxDistance: 48
+  - sprite: {fileID: 21300000, guid: c6f6d75a511391c49bb951e2a9f2c09e, type: 3}
+    minDistance: 16
+    maxDistance: 32
+  - sprite: {fileID: 21300000, guid: f5856e0e27e8c834f9b0b743a6e0e039, type: 3}
+    minDistance: 0
+    maxDistance: 16
