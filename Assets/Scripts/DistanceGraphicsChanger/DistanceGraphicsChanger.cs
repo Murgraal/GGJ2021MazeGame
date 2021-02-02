@@ -84,7 +84,7 @@ public class DistanceGraphicsChanger : MonoBehaviour, IPunObservable , IInRoomCa
        var currentDistance = Vector2.Distance(toFind.position, transform.position);
        var percentageDistanceSinceStart = currentDistance / startDistance * 100;
 
-       if (Application.platform != RuntimePlatform.Android)
+       if (Application.platform == RuntimePlatform.WindowsEditor|| Application.platform == RuntimePlatform.WindowsPlayer)
        {
            myLight.transform.localScale = new Vector2(Mathf.Clamp((100 - percentageDistanceSinceStart) / 10,1,10), Mathf.Clamp((100 - percentageDistanceSinceStart) / 10, 1, 10));
        }
